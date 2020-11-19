@@ -1,0 +1,22 @@
+@mixin container-desktop {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+@mixin container-tablet {
+  width: $tablet-min-width;
+  padding: 0 45px;
+}
+
+@mixin container-mobile {
+  width: $mobile-min-width;
+  padding: 0 16px;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

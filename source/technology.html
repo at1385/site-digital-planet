@@ -60,7 +60,13 @@
         <h1 class="title title--inner">VR-технология</h1>
 
         <div class="technology__vr-glasses vr-glasses">
-          <img class="vr-glasses__image" src="img/vr-glasses.png" width="418" height="215" alt="VR-очки">
+          <picture>
+            <source media="(max-width: 575px)" type="image/webp" srcset="img/vr-glasses-m.webp 1x, img/vr-glasses-m@2x.webp 2x">
+            <source type="image/webp" srcset="img/vr-glasses.webp 1x, img/vr-glasses@2x.webp 2x">
+
+            <source media="(max-width: 575px)" srcset="img/vr-glasses-m.png 1x, img/vr-glasses-m@2x.png 2x">
+            <img class="vr-glasses__image" src="img/vr-glasses.png" srcset="img/vr-glasses@2x.png 2x" width="418" height="215" alt="VR-очки">
+          </picture>
           <button class="vr-glasses__zoom-button" type="button" aria-label="Увеличить изображение"></button>
         </div>
 

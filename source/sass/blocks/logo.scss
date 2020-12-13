@@ -1,0 +1,32 @@
+.logo {
+  width: 193px;
+  height: 28px;
+
+  &[href] {
+    @include focus;
+
+    &:hover,
+    &:focus {
+      .logo__image {
+        fill: $brighter;
+        transition: 0.4s;
+      }
+    }
+
+    &:active {
+      outline: none;
+
+      .logo__image {
+        fill-opacity: 0.5;
+        transition: none;
+      }
+    }
+  }
+}
+
+.logo__image {
+  width: 193px;
+  height: 28px;
+
+  fill: $lightest;
+}

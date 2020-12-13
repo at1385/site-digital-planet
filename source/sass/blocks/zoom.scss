@@ -1,0 +1,17 @@
+.zoom {
+  position: relative;
+
+  padding-left: 25px;
+
+  &::before {
+    @include page-label;
+
+    content: "Увеличенное изображение";
+
+    background-image: url("../img/icon-loupe.svg");
+  }
+}
+
+.zoom__title {
+  margin-bottom: 46px;
+}

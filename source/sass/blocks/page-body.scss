@@ -1,0 +1,52 @@
+.page-body {
+  min-width: $mobile-min-width;
+  margin: 0;
+
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: $lightest;
+
+  background-color: $dark;
+  background-image:
+    linear-gradient(rgba($darkest, 0.15)),
+    url("../img/bg-inner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &--index {
+    background-image:
+      radial-gradient(45.97% 54.43% at 50% 45.57%, transparent 50.28%, rgba($darkest, 0.3) 100%),
+      url("../img/bg-index.jpg");
+    background-position:
+      50%,
+      50%;
+    background-size:
+      cover,
+      cover;
+  }
+
+  &--modal {
+    overflow: hidden;
+  }
+}
+
+.page-body__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $desktop-max-width;
+  height: 100vh;
+  padding: 0 4.7%;
+  margin: 0 auto;
+
+  &--index {
+    background-image: url("../img/bg-kid-vr-01.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 430px 350px;
+  }
+}

@@ -1,0 +1,32 @@
+.gallery {
+  position: relative;
+
+  &::before {
+    @include page-label;
+
+    content: "Галерея";
+
+    background-image: url("../img/icon-gallery.svg");
+  }
+}
+
+.gallery__title {
+  margin-bottom: 46px;
+}
+
+.gallery__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  flex-shrink: 0;
+
+  margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+}

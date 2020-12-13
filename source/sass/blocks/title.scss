@@ -1,0 +1,25 @@
+.title {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding-right: 25px;
+
+  font-size: 44px;
+  font-weight: 500;
+  vertical-align: middle;
+
+  border-bottom: 3px solid $brighter;
+
+  &--index {
+    padding-right: 0;
+
+    font-size: 96px;
+    font-weight: 400;
+
+    border-bottom: none;
+  }
+
+  &--lineless {
+    border-bottom: none;
+  }
+}

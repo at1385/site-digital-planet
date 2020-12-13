@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Виртуальный планетарий &laquo;Digital Planet&raquo; - VR-очки</title>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page-body">
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <a class="logo" href="index.html">
+            <svg class="logo__image" width="193" height="28" aria-label="Логотип Digital Planet">
+              <use class="logo__desktop" xlink:href="img/sprite.svg#digital-planet-logo"></use>
+              <use class="logo__mobile" xlink:href="img/sprite.svg#digital-planet-logo-mobile"></use>
+            </svg>
+          </a>
+
+          <ul class="main-nav__site-menu site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="about.html">О&nbsp;продукте</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="howitworks.html">Как&nbsp;работает</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="technology.html">Технология</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="questions.html">Вопросы</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="main-nav__order-button button" href="order.html">Заказать</a>
+
+          <button class="main-nav__menu-toggle" type="button" aria-label="Показать/Скрыть меню"></button>
+
+          <div class="main-nav__contacts">
+            <a class="main-nav__phone-link" href="tel:+88005553575">8&nbsp;(800)&nbsp;555&nbsp;35&nbsp;75</a>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vkontakte" href="#">
+                  <span class="visually-hidden">Vkontakte</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="zoom">
+          <h1 class="zoom__title title">VR-очки</h1>
+
+          <div class="vr-glasses vr-glasses--page">
+            <p class="vr-glasses__image-wrapper vr-glasses__image-wrapper--page">
+              <picture>
+                <img class="vr-glasses__image vr-glasses__image--large" src="img/vr-glasses-zoom.png" srcset="img/vr-glasses-zoom@2x.png 2x" width="1030" height="769" alt="VR-очки">
+              </picture>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer page-footer--full-info">
+        <p class="page-footer__copyright page-footer__copyright--show">&copy;&nbsp;Digital&nbsp;Planet,&nbsp;2019</p>
+
+        <p class="page-footer__copyright page-footer__copyright--show">Детский VR&nbsp;планетарий. Все права защищены.</p>
+
+        <ul class="socials socials--show">
+          <li class="socials__item">
+            <a class="socials__link socials__link--small socials__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--small socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <section class="modal modal--order order">
+      <form id="order-form" class="order__form order__form--modal" action="https://echo.htmlacademy.ru" method="post">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="order__subtitle subtitle subtitle--darkest">Закажите VR&nbsp;планетарий</h2>
+
+        <p class="order__paragraph order__paragraph--modal paragraph paragraph--dark">Оставьте Ваши контактные данные, мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним Вам.</p>
+
+        <div class="order__input-wrapper">
+          <label class="visually-hidden" for="order-form-name">Ваше имя</label>
+          <input id="order-form-name" class="form-field form-field--shadow" type="text" name="order-form-name" placeholder="Ваше имя" required>
+        </div>
+        <div class="order__input-wrapper">
+          <label class="visually-hidden" for="order-form-phone">Ваш телефон</label>
+          <input id="order-form-phone" class="form-field form-field--shadow" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
+        </div>
+        <button class="button button--dark-text" type="submit" name="order-form-submit">Отправить</button>
+      </form>
+
+      <div class="modal__overlay"></div>
+    </section>
+
+    <div class="modal modal--success-message">
+      <section class="status-message">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="status-message__subtitle subtitle subtitle--dark">Данные успешно отправлены!</h2>
+
+        <p class="status-message__paragraph paragraph paragraph--dark">Мы&nbsp;обязательно свяжемся с&nbsp;Вами в&nbsp;ближайшее время для оформления заказа, оставайтесь на&nbsp;связи!</p>
+
+        <button class="button button--dark-text" type="button">Ok</button>
+      </section>
+
+      <div class="modal__overlay"></div>
+    </div>
+
+    <div class="modal modal--error-message">
+      <section class="status-message status-message--error">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="status-message__subtitle subtitle subtitle--dark">Произошла ошибка!</h2>
+
+        <p class="status-message__paragraph paragraph paragraph--dark">Что-то пошло не так и данные не были отправлены, просьба повторить процедуру ещё раз!</p>
+
+        <button class="button button--dark-text" type="button">Ok</button>
+      </section>
+
+      <div class="modal__overlay"></div>
+    </div>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

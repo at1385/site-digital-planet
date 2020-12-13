@@ -4,158 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Виртуальный планетарий &laquo;Digital Planet&raquo;&nbsp;&mdash; Контакты</title>
+    <title>Виртуальный планетарий &laquo;Digital Planet&raquo; - Контакты</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="logo" href="index.html">
-          <svg class="logo__image" width="193" height="28" aria-label="Логотип Digital Planet">
-            <use class="logo__desktop" xlink:href="img/sprite.svg#digital-planet-logo"></use>
-            <use class="logo__mobile" xlink:href="img/sprite.svg#digital-planet-logo-mobile"></use>
-          </svg>
-        </a>
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <a class="logo" href="index.html">
+            <svg class="logo__image" width="193" height="28" aria-label="Логотип Digital Planet">
+              <use class="logo__desktop" xlink:href="img/sprite.svg#digital-planet-logo"></use>
+              <use class="logo__mobile" xlink:href="img/sprite.svg#digital-planet-logo-mobile"></use>
+            </svg>
+          </a>
 
-        <ul class="site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="about.html">О&nbsp;продукте</a>
+          <ul class="main-nav__site-menu site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="about.html">О&nbsp;продукте</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="howitworks.html">Как&nbsp;работает</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="technology.html">Технология</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="questions.html">Вопросы</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--active">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="main-nav__order-button button" href="order.html">Заказать</a>
+
+          <button class="main-nav__menu-toggle" type="button" aria-label="Показать/Скрыть меню"></button>
+
+          <div class="main-nav__contacts">
+            <a class="main-nav__phone-link" href="tel:+88005553575">8&nbsp;(800)&nbsp;555&nbsp;35&nbsp;75</a>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vkontakte" href="#">
+                  <span class="visually-hidden">Vkontakte</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="contacts">
+          <h1 class="contacts__title title">Контакты</h1>
+
+          <div class="contacts__columns">
+            <div class="contacts__column contacts__column--first">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h2 class="contacts__subtitle subtitle">Новороссийск</h2>
+                  <p class="contacts__paragraph paragraph">
+                    <a class="contacts__link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a>
+                    <a class="contacts__link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a>
+                  </p>
+                </li>
+
+                <li class="contacts__item">
+                  <h2 class="contacts__subtitle subtitle">Москва</h2>
+                  <p class="contacts__paragraph paragraph">
+                    <a class="contacts__link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a>
+                    <a class="contacts__link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a>
+                  </p>
+                </li>
+
+                <li class="contacts__item">
+                  <h2 class="contacts__subtitle subtitle">Саратов</h2>
+                  <p class="contacts__paragraph paragraph">
+                    <a class="contacts__link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a>
+                    <a class="contacts__link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts__column">
+              <h2 class="contacts__subtitle subtitle">Остались вопросы? Задайте их нам!</h2>
+
+              <p class="contacts__paragraph paragraph">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
+
+              <form id="contacts-form" class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="contacts__input-wrapper">
+                  <label class="visually-hidden" for="contacts-form-name">Ваше имя</label>
+                  <input id="contacts-form-name" class="form-field" type="text" name="contacts-form-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="contacts__input-wrapper">
+                  <label class="visually-hidden" for="contacts-form-email">Ваш e-mail</label>
+                  <input id="contacts-form-email" class="form-field" type="email" name="contacts-form-email" placeholder="Ваш e-mail" required>
+                </div>
+                <div class="contacts__textarea-wrapper">
+                  <label class="visually-hidden" for="contacts-form-question">Ваш вопрос</label>
+                  <textarea id="contacts-form-question" class="form-field form-field--textarea" name="contacts-form-question" rows="8" cols="80" placeholder="Что вас интересует?" required></textarea>
+                </div>
+                <button class="button" type="submit" name="contacts-form-submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer page-footer--full-info">
+        <p class="page-footer__copyright page-footer__copyright--show">&copy;&nbsp;Digital&nbsp;Planet,&nbsp;2019</p>
+
+        <p class="page-footer__copyright page-footer__copyright--show">Детский VR&nbsp;планетарий. Все права защищены.</p>
+
+        <ul class="page-footer__socials socials socials--show">
+          <li class="socials__item">
+            <a class="socials__link socials__link--small socials__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="howitworks.html">Как&nbsp;работает</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="technology.html">Технология</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="questions.html">Вопросы</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--active">Контакты</a>
+          <li class="socials__item">
+            <a class="socials__link socials__link--small socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
           </li>
         </ul>
-
-        <a class="main-nav__order button" href="order.html">Заказать</a>
-
-        <button class="main-nav__menu-toggle" type="button" aria-label="Показать/Скрыть меню"></button>
-
-        <div class="main-nav__contacts">
-          <a class="main-nav__phone" href="tel:+88005553575">8&nbsp;(800)&nbsp;555&nbsp;35&nbsp;75</a>
-          <ul class="socials">
-            <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="#">
-                <span class="visually-hidden">Facebook</span></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--vkontakte" href="#">
-                <span class="visually-hidden">Vkontakte</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <section class="contacts">
-        <h1 class="title">Контакты</h1>
-
-        <div class="contacts__column">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h2 class="subtitle">Новороссийск</h2>
-              <p class="paragraph">
-                <a class="contacts__link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a>
-                <a class="contacts__link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a>
-              </p>
-            </li>
-
-            <li class="contacts__item">
-              <h2 class="subtitle">Москва</h2>
-              <p class="paragraph">
-                <a class="contacts__link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a>
-                <a class="contacts__link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a>
-              </p>
-            </li>
-
-            <li class="contacts__item">
-              <h2 class="subtitle">Саратов</h2>
-              <p class="paragraph">
-                <a class="contacts__link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a>
-                <a class="contacts__link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__column">
-          <h2 class="subtitle">Остались вопросы? Задайте их нам!</h2>
-
-          <p class="paragraph">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
-
-          <form id="contacts-form" class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label class="visually-hidden" for="contacts-form-name">Ваше имя</label>
-              <input id="contacts-form-name" type="text" name="contacts-form-name" placeholder="Ваше имя" required>
-            </p>
-            <p>
-              <label class="visually-hidden" for="contacts-form-email">Ваш e-mail</label>
-              <input id="contacts-form-email" type="email" name="contacts-form-email" placeholder="Ваш e-mail" required>
-            </p>
-            <p>
-              <label class="visually-hidden" for="contacts-form-question">Ваш вопрос</label>
-              <textarea id="contacts-form-question" name="contacts-form-question" rows="8" cols="80" placeholder="Что вас интересует?" required></textarea>
-            </p>
-            <button class="button" type="submit" name="contacts-form-submit">Отправить</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <p class="page-footer__copyright">&copy;&nbsp;Digital&nbsp;Planet,&nbsp;2019</p>
-
-      <p class="page-footer__copyright">Детский VR&nbsp;планетарий. Все права защищены.</p>
-
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="#">
-            <span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--vkontakte" href="#">
-            <span class="visually-hidden">Vkontakte</span></a>
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
 
     <section class="modal modal--order order">
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+      <form id="order-form" class="order__form order__form--modal" action="https://echo.htmlacademy.ru" method="post">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
 
-      <h2 class="subtitle subtitle--dark">Закажите VR&nbsp;планетарий</h2>
+        <h2 class="order__subtitle subtitle subtitle--darkest">Закажите VR&nbsp;планетарий</h2>
 
-      <p class="paragraph paragraph--dark">Оставьте ваши контактные данные, мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним вам.</p>
+        <p class="order__paragraph order__paragraph--modal paragraph paragraph--dark">Оставьте Ваши контактные данные, мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним Вам.</p>
 
-      <form id="order-form" class="order__form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <div class="order__input-wrapper">
           <label class="visually-hidden" for="order-form-name">Ваше имя</label>
-          <input id="order-form-name" class="order__input" type="text" name="order-form-name" placeholder="Ваше имя" required>
-        </p>
-        <p>
+          <input id="order-form-name" class="form-field form-field--shadow" type="text" name="order-form-name" placeholder="Ваше имя" required>
+        </div>
+        <div class="order__input-wrapper">
           <label class="visually-hidden" for="order-form-phone">Ваш телефон</label>
-          <input id="order-form-phone" class="order__input" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
-        </p>
+          <input id="order-form-phone" class="form-field form-field--shadow" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
+        </div>
         <button class="button button--dark-text" type="submit" name="order-form-submit">Отправить</button>
       </form>
+
+      <div class="modal__overlay"></div>
     </section>
 
-    <section class="modal modal--success">
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    <template id="success">
+      <div class="modal modal--success-message">
+        <section class="status-message">
+          <button class="modal__close" type="button" aria-label="Закрыть"></button>
 
-      <h2 class="subtitle subtitle--dark">Сообщение успешно отправлено!</h2>
+          <h2 class="status-message__subtitle subtitle subtitle--dark">Сообщение успешно отправлено!</h2>
 
-      <p class="paragraph paragraph--dark">Мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время и&nbsp;подробно ответим на&nbsp;ваш вопрос, будьте на&nbsp;связи!</p>
+          <p class="status-message__paragraph paragraph paragraph--dark">Мы&nbsp;обязательно свяжемся с&nbsp;Вами в&nbsp;ближайшее время и&nbsp;подробно ответим на&nbsp;Ваш вопрос, будьте на&nbsp;связи!</p>
 
-      <button class="button button--dark-text" type="button">Ok</button>
-    </section>
+          <button class="button button--dark-text" type="button">Ok</button>
+        </section>
+
+        <div class="modal__overlay"></div>
+      </div>
+    </template>
+
+    <template id="error">
+      <div class="modal modal--error-message">
+        <section class="status-message status-message--error">
+          <button class="modal__close" type="button" aria-label="Закрыть"></button>
+
+          <h2 class="status-message__subtitle subtitle subtitle--dark">Произошла ошибка!</h2>
+
+          <p class="status-message__paragraph paragraph paragraph--dark">Что-то пошло не так и сообщение не было отправлено, просьба повторить процедуру ещё раз!</p>
+
+          <button class="button button--dark-text" type="button">Ok</button>
+        </section>
+
+        <div class="modal__overlay"></div>
+      </div>
+    </template>
 
     <script src="js/script.min.js"></script>
   </body>

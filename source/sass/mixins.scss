@@ -25,3 +25,20 @@
   outline-color: $brighter;
   outline-offset: 6px;
 }
+
+@mixin link-conditions {
+  &:hover,
+  &:focus {
+    color: $brighter;
+
+    transition: 0.4s;
+  }
+
+  &:active {
+    color: rgba($brighter, 0.5);
+
+    outline: 0;
+
+    transition: none;
+  }
+}

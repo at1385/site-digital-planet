@@ -1,0 +1,102 @@
+.howitworks {
+  padding-left: 25px;
+}
+
+.howitworks__title {
+  margin-bottom: 46px;
+}
+
+.howitworks__list-wrapper {
+  padding-left: 22px;
+}
+
+.howitworks__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image:
+    url("../img/decor-dashed-wave-01.svg"),
+    url("../img/decor-dashed-wave-02.svg"),
+    url("../img/decor-dashed-wave-03.svg");
+  background-repeat: no-repeat;
+  background-position:
+    346px 17px,
+    127px 175px,
+    387px 275px;
+
+  counter-reset: number;
+}
+
+.howitworks__item {
+  position: relative;
+
+  display: flex;
+  width: 535px;
+  margin-bottom: 61px;
+  padding-left: 8px;
+
+  &::after {
+    counter-increment: number;
+    content: counter(number);
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 28px;
+    font-weight: 700;
+    color: $brighter;
+    text-align: center;
+
+    background-color: $lightest;
+
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(6, 58, 46, 0.2);
+  }
+
+  &:nth-child(odd) {
+    margin-right: 58px;
+  }
+
+  &:nth-child(2n) {
+    padding-top: 18px;
+
+    &::after {
+      top: 128px;
+    }
+  }
+
+  &:nth-child(4n-1) {
+    margin-right: 77px;
+    margin-left: 32px;
+  }
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+.howitworks__image-wrapper {
+  flex-shrink: 0;
+  margin: 0;
+  margin-right: 21px;
+}
+
+.howitworks__item-wrapper {
+  width: 56.1%;
+  padding-top: 13px;
+}
+
+.howitworks__subtitle {
+  width: 50%;
+  margin-bottom: 9px;
+}
+
+.howitworks__slider-controls {
+  display: none;
+}

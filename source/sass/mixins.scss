@@ -51,3 +51,19 @@
 
   transform: translate(-50%, -50%);
 }
+
+@mixin page-label {
+  position: absolute;
+  top: 22px;
+  right: 0;
+
+  padding-left: 40px;
+
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: $brighter;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

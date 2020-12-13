@@ -4,152 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Виртуальный планетарий &laquo;Digital Planet&raquo;&nbsp;&mdash; Технология</title>
+    <title>Виртуальный планетарий &laquo;Digital Planet&raquo; - Технология</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="logo" href="index.html">
-          <svg class="logo__image" width="193" height="28" aria-label="Логотип Digital Planet">
-            <use class="logo__desktop" xlink:href="img/sprite.svg#digital-planet-logo"></use>
-            <use class="logo__mobile" xlink:href="img/sprite.svg#digital-planet-logo-mobile"></use>
-          </svg>
-        </a>
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <a class="logo" href="index.html">
+            <svg class="logo__image" width="193" height="28" aria-label="Логотип Digital Planet">
+              <use class="logo__desktop" xlink:href="img/sprite.svg#digital-planet-logo"></use>
+              <use class="logo__mobile" xlink:href="img/sprite.svg#digital-planet-logo-mobile"></use>
+            </svg>
+          </a>
 
-        <ul class="site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="about.html">О&nbsp;продукте</a>
+          <ul class="main-nav__site-menu site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="about.html">О&nbsp;продукте</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="howitworks.html">Как&nbsp;работает</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--active">Технология</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="questions.html">Вопросы</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="main-nav__order-button button" href="order.html">Заказать</a>
+
+          <button class="main-nav__menu-toggle" type="button" aria-label="Показать/Скрыть меню"></button>
+
+          <div class="main-nav__contacts">
+            <a class="main-nav__phone-link" href="tel:+88005553575">8&nbsp;(800)&nbsp;555&nbsp;35&nbsp;75</a>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vkontakte" href="#">
+                  <span class="visually-hidden">Vkontakte</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="technology">
+          <h1 class="technology__title title title--inner">VR-технология</h1>
+
+          <div class="technology__vr-glasses vr-glasses">
+            <p class="vr-glasses__image-wrapper">
+              <picture>
+                <source media="(max-width: 575px)" type="image/webp" srcset="img/vr-glasses-m.webp 1x, img/vr-glasses-m@2x.webp 2x">
+                <source type="image/webp" srcset="img/vr-glasses.webp 1x, img/vr-glasses@2x.webp 2x">
+
+                <source media="(max-width: 575px)" srcset="img/vr-glasses-m.png 1x, img/vr-glasses-m@2x.png 2x">
+                <img class="vr-glasses__image" src="img/vr-glasses.png" srcset="img/vr-glasses@2x.png 2x" width="418" height="215" alt="VR-очки">
+              </picture>
+            </p>
+            <a class="vr-glasses__zoom-button" href="zoom-glasses.html" aria-label="Увеличить изображение"></a>
+          </div>
+
+          <div class="technology__list-wrapper slider">
+            <ul class="technology__list slider__list">
+              <li class="technology__item slider__item">
+                <h2 class="technology__subtitle subtitle">Masters&nbsp;Glass&nbsp;VR-iii</h2>
+                <p class="technology__paragraph paragraph paragraph--small">Используем только оригинальные импортные VR-очки. Технологии протестированы и&nbsp;безопасны для глаз. Напряжение во&nbsp;время просмотра&nbsp;&mdash; как при прогулке за&nbsp;счёт качественного обёъмного изображения.</p>
+              </li>
+              <li class="technology__item slider__item">
+                <h2 class="technology__subtitle subtitle">Безопасность</h2>
+                <p class="technology__paragraph paragraph paragraph--small">Зритель всегда находится в&nbsp;центре зала, и&nbsp;четко зафиксирован в&nbsp;пространстве, что делает просмотр понятным и&nbsp;комфортным. Технология виртуальной реальности не&nbsp;портит зрение, а&nbsp;эффект присутсвтия развивает креативность и&nbsp;пространственное мышление.</p>
+              </li>
+              <li class="technology__item slider__item">
+                <h2 class="technology__subtitle subtitle">Оборудование</h2>
+                <p class="technology__paragraph paragraph paragraph--small">Все фильмы воспроизводятся при помощи встроенных в&nbsp;очки экранов мобильных телефонов ведущих брендов. Наши техники привезут<br> всё обордуование с&nbsp;собой: от&nbsp;вас нужно лишь помещение для урока.</p>
+              </li>
+              <li class="technology__item slider__item">
+                <h2 class="technology__subtitle subtitle">Система крепления</h2>
+                <p class="technology__paragraph paragraph paragraph--small">Подходит под любой размер головы, даже для первоклассника. Во&nbsp;время просмотра не&nbsp;получится навредить голове ребёнка за&nbsp;счёт тщательно проработанной конструкции очков.</p>
+              </li>
+            </ul>
+
+            <div class="slider__controls">
+              <p class="slider__pagination"><b class="slider__pagination slider__pagination--current">01</b>&nbsp;/&nbsp;04</p>
+
+              <div class="slider__toggle-wrapper">
+                <button class="slider__toggle slider__toggle--prev" aria-label="Предыдущий слайд"></button>
+                <button class="slider__toggle slider__toggle--next" aria-label="Следующий слайд"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <p class="page-footer__copyright">&copy;&nbsp;Digital&nbsp;Planet,&nbsp;2019</p>
+
+        <p class="page-footer__copyright">Детский VR&nbsp;планетарий. Все права защищены.</p>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="howitworks.html">Как&nbsp;работает</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link site-menu__link--active">Технология</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="questions.html">Вопросы</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="contacts.html">Контакты</a>
+          <li class="socials__item">
+            <a class="socials__link socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
           </li>
         </ul>
 
-        <a class="main-nav__order button" href="order.html">Заказать</a>
-
-        <button class="main-nav__menu-toggle" type="button" aria-label="Показать/Скрыть меню"></button>
-
-        <div class="main-nav__contacts">
-          <a class="main-nav__phone" href="tel:+88005553575">8&nbsp;(800)&nbsp;555&nbsp;35&nbsp;75</a>
-          <ul class="socials">
-            <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="#">
-                <span class="visually-hidden">Facebook</span></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--vkontakte" href="#">
-                <span class="visually-hidden">Vkontakte</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <section class="technology">
-        <h1 class="title title--inner">VR-технология</h1>
-
-        <div class="technology__vr-glasses vr-glasses">
-          <picture>
-            <source media="(max-width: 575px)" type="image/webp" srcset="img/vr-glasses-m.webp 1x, img/vr-glasses-m@2x.webp 2x">
-            <source type="image/webp" srcset="img/vr-glasses.webp 1x, img/vr-glasses@2x.webp 2x">
-
-            <source media="(max-width: 575px)" srcset="img/vr-glasses-m.png 1x, img/vr-glasses-m@2x.png 2x">
-            <img class="vr-glasses__image" src="img/vr-glasses.png" srcset="img/vr-glasses@2x.png 2x" width="418" height="215" alt="VR-очки">
-          </picture>
-          <button class="vr-glasses__zoom-button" type="button" aria-label="Увеличить изображение"></button>
-        </div>
-
-        <div class="slider">
-          <ul class="technology__list slider__list">
-            <li class="technology__item slider__item">
-              <h2 class="subtitle">Masters&nbsp;Glass&nbsp;VR-iii</h2>
-              <p class="paragraph">Используем только оригинальные импортные VR-очки. Технологии протестированы и&nbsp;безопасны для глаз. Напряжение во&nbsp;время просмотра&nbsp;&mdash; как при прогулке за&nbsp;счёт качественного обёъмного изображения.</p>
-            </li>
-            <li class="technology__item slider__item">
-              <h2 class="subtitle">Безопасность</h2>
-              <p class="paragraph">Зритель всегда находится в&nbsp;центре зала, и&nbsp;четко зафиксирован в&nbsp;пространстве, что делает просмотр понятным и&nbsp;комфортным. Технология виртуальной реальности не&nbsp;портит зрение, а&nbsp;эффект присутсвтия развивает креативность и&nbsp;пространственное мышление.</p>
-            </li>
-            <li class="technology__item slider__item">
-              <h2 class="subtitle">Оборудование</h2>
-              <p class="paragraph">Все фильмы воспроизводятся при помощи встроенных в&nbsp;очки экранов мобильных телефонов ведущих брендов. Наши техники привезут всё обордуование с&nbsp;собой: от&nbsp;вас нужно лишь помещение для урока.</p>
-            </li>
-            <li class="technology__item slider__item">
-              <h2 class="subtitle">Система крепления</h2>
-              <p class="paragraph">Подходит под любой размер головы, даже для первоклассника. Во&nbsp;время просмотра не&nbsp;получится навредить голове ребёнка за&nbsp;счёт тщательно проработанной конструкции очков.</p>
-            </li>
-          </ul>
-
-          <div class="slider__controls">
-            <p class="slider__pagination"><b class="slider__pagination slider__pagination--current">01</b>&nbsp;/&nbsp;04</p>
-
-            <div class="slider__toggle-wrapper">
-              <button class="slider__toggle slider__toggle--prev" aria-label="Предыдущий слайд"></button>
-              <button class="slider__toggle slider__toggle--next" aria-label="Следующий слайд"></button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <p class="page-footer__copyright page-footer__copyright--hidden">&copy;&nbsp;Digital&nbsp;Planet,&nbsp;2019</p>
-
-      <p class="page-footer__copyright page-footer__copyright--hidden">Детский VR&nbsp;планетарий. Все права защищены.</p>
-
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="#">
-            <span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--vkontakte" href="#">
-            <span class="visually-hidden">Vkontakte</span></a>
-        </li>
-      </ul>
-
-      <a class="page-footer__next-page-link" href="questions.html"><span class="visually-hidden">Скролл вниз</span></a>
-    </footer>
+        <a class="page-footer__next-page-link" href="questions.html"><span class="visually-hidden">Скролл вниз</span></a>
+      </footer>
+    </div>
 
     <section class="modal modal--order order">
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+      <form id="order-form" class="order__form order__form--modal" action="https://echo.htmlacademy.ru" method="post">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
 
-      <h2 class="subtitle subtitle--dark">Закажите VR&nbsp;планетарий</h2>
+        <h2 class="order__subtitle subtitle subtitle--darkest">Закажите VR&nbsp;планетарий</h2>
 
-      <p class="paragraph paragraph--dark">Оставьте ваши контактные данные, мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним вам.</p>
+        <p class="order__paragraph order__paragraph--modal paragraph paragraph--dark">Оставьте Ваши контактные данные, мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним Вам.</p>
 
-      <form id="order-form" class="order__form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <div class="order__input-wrapper">
           <label class="visually-hidden" for="order-form-name">Ваше имя</label>
-          <input id="order-form-name" class="order__input" type="text" name="order-form-name" placeholder="Ваше имя" required>
-        </p>
-        <p>
+          <input id="order-form-name" class="form-field form-field--shadow" type="text" name="order-form-name" placeholder="Ваше имя" required>
+        </div>
+        <div class="order__input-wrapper">
           <label class="visually-hidden" for="order-form-phone">Ваш телефон</label>
-          <input id="order-form-phone" class="order__input" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
-        </p>
+          <input id="order-form-phone" class="form-field form-field--shadow" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
+        </div>
         <button class="button button--dark-text" type="submit" name="order-form-submit">Отправить</button>
       </form>
+
+      <div class="modal__overlay"></div>
     </section>
 
-    <section class="modal modal--success">
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    <div class="modal modal--success-message">
+      <section class="status-message">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
 
-      <h2 class="subtitle subtitle--dark">Сообщение успешно отправлено!</h2>
+        <h2 class="status-message__subtitle subtitle subtitle--dark">Данные успешно отправлены!</h2>
 
-      <p class="paragraph paragraph--dark">Мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время и&nbsp;подробно ответим на&nbsp;ваш вопрос, будьте на&nbsp;связи!</p>
+        <p class="status-message__paragraph paragraph paragraph--dark">Мы&nbsp;обязательно свяжемся с&nbsp;Вами в&nbsp;ближайшее время для оформления заказа, оставайтесь на&nbsp;связи!</p>
 
-      <button class="button button--dark-text" type="button">Ok</button>
-    </section>
+        <button class="button button--dark-text" type="button">Ok</button>
+      </section>
+
+      <div class="modal__overlay"></div>
+    </div>
+
+    <div class="modal modal--error-message">
+      <section class="status-message status-message--error">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="status-message__subtitle subtitle subtitle--dark">Произошла ошибка!</h2>
+
+        <p class="status-message__paragraph paragraph paragraph--dark">Что-то пошло не так и данные не были отправлены, просьба повторить процедуру ещё раз!</p>
+
+        <button class="button button--dark-text" type="button">Ok</button>
+      </section>
+
+      <div class="modal__overlay"></div>
+    </div>
 
     <script src="js/script.min.js"></script>
   </body>

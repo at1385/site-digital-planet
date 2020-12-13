@@ -1,0 +1,147 @@
+.questions {
+  position: relative;
+
+  height: 100%;
+  padding-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -85px;
+    right: -34px;
+
+    width: 235px;
+    height: 264px;
+
+    background-image: url("../img/bg-kid-vr-02.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &--js {
+    .questions__question-wrapper {
+      min-height: 72px;
+      margin-bottom: 0;
+
+      background-color: transparent;
+    }
+
+    .questions__subtitle {
+      margin-top: -8px;
+
+      color: rgba($darker, 0.8);
+
+      &::before {
+        background-color: $brighter;
+      }
+    }
+
+    .questions__toggle {
+      display: block;
+    }
+  }
+}
+
+.questions__title {
+  margin-bottom: 32px;
+}
+
+.questions__list {
+  @include list-reset;
+
+  width: 74.6%;
+}
+
+.questions__item {
+  margin-bottom: 5px;
+
+  background-color: rgba($lightest, 0.95);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.questions__question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 52px;
+  margin-bottom: 20px;
+  padding-left: 22px;
+
+  background-color: darken($bright, 5%);
+}
+
+.questions__subtitle {
+  position: relative;
+
+  align-self: center;
+  padding-left: 18px;
+
+  color: $lightest;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: $lightest;
+
+    border-radius: 50%;
+  }
+}
+
+.questions__toggle {
+  display: none;
+  width: 67px;
+  height: 72px;
+  padding: 0;
+
+  background-color: $bright;
+  background-image: url("../img/icon-open-question.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  border: none;
+
+  cursor: pointer;
+
+  &--opened {
+    background-image: url("../img/icon-close-question.svg");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $brighter;
+
+    transition: 0.4s;
+  }
+
+  &:focus {
+    outline: 1px dotted $brighter;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $bright;
+
+    outline: none;
+
+    transition: none;
+  }
+}
+
+.questions__paragraph {
+  width: 76%;
+  margin-top: -7px;
+  padding-left: 50px;
+  padding-bottom: 33px;
+
+  &--closed {
+    display: none;
+  }
+}

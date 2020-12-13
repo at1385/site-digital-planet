@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.main-nav__site-menu {
+  margin: 0 auto;
+}
+
+.main-nav__order-button {
+  margin-right: 20px;
+}
+
+.main-nav__menu-toggle {
+  display: none;
+}
+
+.main-nav__phone-link {
+  @include focus;
+  @include link-conditions;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: $lightest;
+}

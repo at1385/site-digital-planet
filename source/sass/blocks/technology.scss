@@ -1,0 +1,63 @@
+.technology {
+  padding-left: 25px;
+}
+
+.technology__title {
+  margin-bottom: 60px;
+}
+
+.technology__vr-glasses {
+  margin-left: 353px;
+}
+
+.technology__subtitle {
+  margin-bottom: 13px;
+}
+
+.technology__list-wrapper {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -397px;
+  padding-left: 28px;
+}
+
+.technology__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image:
+    url("../img/decor-solid-pointer-01.svg"),
+    url("../img/decor-solid-pointer-02.svg"),
+    url("../img/decor-solid-pointer-03.svg"),
+    url("../img/decor-solid-pointer-04.svg");
+  background-repeat: no-repeat;
+  background-position:
+    211px 12px,
+    577px 15px,
+    166px 168px,
+    700px 180px;
+}
+
+.technology__item {
+  width: 280px;
+  margin-bottom: 43px;
+
+  &:nth-child(odd) {
+    margin-right: 554px;
+  }
+
+  &:nth-child(4) {
+    padding-top: 19px;
+  }
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+.technology__paragraph {
+  width: 99%;
+}

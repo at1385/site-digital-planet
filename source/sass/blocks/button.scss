@@ -1,0 +1,74 @@
+.button {
+  @include focus;
+
+  display: inline-block;
+  min-width: 96px;
+  padding: 9px 15px;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: $lightest;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: transparent;
+
+  border: 2px solid $bright;
+  border-radius: 2px;
+
+  cursor: pointer;
+
+  &--large {
+    padding: 20px 40px;
+    padding-left: 80px;
+
+    font-size: 21px;
+
+    border-width: 3px;
+    border-radius: 3px;
+  }
+
+  &--fill {
+    background-color: $bright;
+  }
+
+  &--order {
+    background-image: url("../img/icon-ticket.svg");
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+  }
+
+  &--video {
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 23% 50%;
+  }
+
+  &--dark-text {
+    color: rgba($darker, 0.4);
+  }
+
+  &:hover,
+  &:focus {
+    color: $lightest;
+
+    background-color: $brighter;
+
+    border-color: $brighter;
+
+    transition: 0.4s;
+  }
+
+  &:focus {
+    outline: 1px dotted $brighter;
+  }
+
+  &:active {
+    outline: none;
+
+    opacity: 0.5;
+
+    transition: none;
+  }
+}

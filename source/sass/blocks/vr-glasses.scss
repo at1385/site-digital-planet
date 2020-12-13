@@ -1,0 +1,115 @@
+.vr-glasses {
+  position: relative;
+
+  display: flex;
+  width: 408px;
+  height: 408px;
+
+  vertical-align: middle;
+
+  background-color: $lightest;
+
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: -36px;
+
+    width: 480px;
+    height: 480px;
+
+    background-image: url("../img/decor-ellipse-border.svg");
+  }
+
+  &--page {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    background-position: 50%;
+    background-size: 800px 800px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 900px;
+      height: 900px;
+
+      background-image: url("../img/decor-ellipse-border.svg");
+      background-size: 900px;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.vr-glasses__image-wrapper {
+  z-index: 1;
+
+  flex-shrink: 0;
+  align-self: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+
+  &--page {
+    padding: 0;
+  }
+}
+
+.vr-glasses__image {
+  width: 418px;
+  height: 215px;
+
+  &--large {
+    width: 1030px;
+    height: 769px;
+    margin-left: -75px;
+  }
+}
+
+.vr-glasses__zoom-button {
+  z-index: 2;
+
+  flex-shrink: 0;
+  align-self: flex-end;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 20px;
+  margin-left: -119px;
+
+  background-color: $bright;
+  background-image: url("../img/icon-zoom.svg");
+  background-repeat: no-repeat;
+  background-position: 60% 58%;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $brighter;
+
+    transition: 0.4s;
+  }
+
+  &:focus {
+    outline: 1px dotted $brighter;
+  }
+
+  &:active {
+    background-color: $bright;
+
+    outline: none;
+
+    transition: none;
+  }
+}

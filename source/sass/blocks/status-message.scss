@@ -1,0 +1,29 @@
+.status-message {
+  @include modal-position;
+
+  width: 560px;
+  min-height: 338px;
+  padding: 58px 80px;
+  padding-top: 140px;
+
+  text-align: center;
+
+  background-color: $modal;
+  background-image: url("../img/icon-success-large.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 60px;
+
+  border-radius: 3px;
+
+  &--error {
+    background-image: url("../img/icon-error-large.svg");
+  }
+}
+
+.status-message__subtitle {
+  margin-bottom: 10px;
+}
+
+.status-message__paragraph {
+  margin-bottom: 26px;
+}

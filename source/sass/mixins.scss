@@ -20,3 +20,8 @@
 
   list-style: none;
 }
+
+@mixin focus {
+  outline-color: $brighter;
+  outline-offset: 6px;
+}

@@ -1,0 +1,60 @@
+.form-field {
+  width: 100%;
+  height: 46px;
+  padding: 13px 15px;
+
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: $darker;
+
+  background-color: rgba($lightest, 0.95);
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+
+  border: none;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  &::placeholder {
+    font-size: 13px;
+    line-height: 1.3;
+    color: rgba($darker, 0.8);
+  }
+
+  &:focus {
+    outline-color: $brighter;
+    transition: 0.3s;
+  }
+
+  &--textarea {
+    height: 144px;
+
+    resize: none;
+  }
+
+  &--success {
+    padding-right: 46px;
+
+    background-image: url("../img/icon-success-small.svg");
+
+    outline-color: $success;
+
+    transition: 0.3s;
+  }
+
+  &--error {
+    padding-right: 46px;
+
+    background-image: url("../img/icon-error-small.svg");
+
+    outline-color: $error;
+
+    transition: 0.3s;
+  }
+
+  &--shadow {
+    box-shadow: 0 2px 5px rgba($darkest, 0.05);
+  }
+}

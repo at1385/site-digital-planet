@@ -15,3 +15,9 @@
 .zoom__title {
   margin-bottom: 46px;
 }
+
+@media (max-width: $notebook-max-width) {
+  .zoom {
+    padding-left: 0;
+  }
+}

@@ -3,14 +3,20 @@
   height: 28px;
 
   &[href] {
-    @include focus;
+    outline-color: $brighter;
 
     &:hover,
     &:focus {
+      transition: 0.4s;
+
       .logo__image {
         fill: $brighter;
         transition: 0.4s;
       }
+    }
+
+    &:focus {
+      outline-offset: 5px;
     }
 
     &:active {
@@ -25,8 +31,10 @@
 }
 
 .logo__image {
-  width: 193px;
-  height: 28px;
-
   fill: $lightest;
 }
+
+.logo__mobile {
+  display: none;
+}
+

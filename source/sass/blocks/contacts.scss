@@ -75,3 +75,17 @@
 .contacts__textarea-wrapper {
   margin-bottom: 17px;
 }
+
+@media (max-width: $notebook-max-width) {
+  .contacts {
+    padding-left: 0;
+  }
+
+  .contacts__column {
+    width: 55%;
+
+    &--first {
+      width: 26%;
+    }
+  }
+}

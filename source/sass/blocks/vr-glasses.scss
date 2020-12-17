@@ -1,6 +1,12 @@
 .vr-glasses {
   position: relative;
 
+  margin: 0 auto;
+}
+
+.vr-glasses__wrapper {
+  position: relative;
+
   display: flex;
   width: 408px;
   height: 408px;
@@ -59,23 +65,13 @@
   padding-left: 10px;
 
   &--page {
+    width: 100%;
     padding: 0;
   }
 }
 
-.vr-glasses__image {
-  width: 418px;
-  height: 215px;
-
-  &--large {
-    width: 1030px;
-    height: 769px;
-    margin-left: -75px;
-  }
-}
-
-.vr-glasses__zoom-button {
-  z-index: 2;
+.vr-glasses__button {
+  z-index: 3;
 
   flex-shrink: 0;
   align-self: flex-end;
@@ -89,10 +85,8 @@
   background-repeat: no-repeat;
   background-position: 60% 58%;
 
-  border: none;
   border-radius: 50%;
-
-  cursor: pointer;
+  outline-color: $brighter;
 
   &:hover,
   &:focus {
@@ -102,7 +96,7 @@
   }
 
   &:focus {
-    outline: 1px dotted $brighter;
+    outline-offset: 6px;
   }
 
   &:active {
@@ -113,3 +107,8 @@
     transition: none;
   }
 }
+
+.vr-glasses__list {
+  display: none;
+}
+

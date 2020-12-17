@@ -1,6 +1,4 @@
 .button {
-  @include focus;
-
   display: inline-block;
   min-width: 96px;
   padding: 9px 15px;
@@ -16,6 +14,7 @@
 
   border: 2px solid $bright;
   border-radius: 2px;
+  outline-color: $brighter;
 
   cursor: pointer;
 
@@ -62,6 +61,7 @@
 
   &:focus {
     outline: 1px dotted $brighter;
+    outline-offset: 6px;
   }
 
   &:active {

@@ -76,6 +76,8 @@
   position: relative;
 
   align-self: center;
+  width: 90%;
+  padding: 14px 0;
   padding-left: 18px;
 
   color: $lightest;
@@ -96,9 +98,9 @@
 }
 
 .questions__toggle {
+  flex-shrink: 0;
   display: none;
   width: 67px;
-  height: 72px;
   padding: 0;
 
   background-color: $bright;

@@ -45,8 +45,9 @@
 
 .site-menu__link {
   &[href] {
-    @include focus;
     @include link-conditions;
+
+    outline-color: $brighter;
   }
 
   display: inline-block;

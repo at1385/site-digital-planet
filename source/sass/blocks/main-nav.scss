@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
-  width: 100%;
   align-items: center;
+  min-height: 36px;
 }
 
 .main-nav__site-menu {
@@ -17,10 +17,13 @@
 }
 
 .main-nav__phone-link {
-  @include focus;
   @include link-conditions;
 
   font-size: 16px;
   font-weight: 700;
   color: $lightest;
+
+  outline-color: $brighter;
+}
+
 }

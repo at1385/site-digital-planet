@@ -18,9 +18,10 @@
 
   &--right {
     position: relative;
-    width: auto;
+    width: 54%;
     margin-left: auto;
     padding-top: 100px;
+    padding-left: 46px;
   }
 }
 
@@ -35,8 +36,8 @@
 
 .about__subtitle {
   position: absolute;
-  top: 328px;
-  left: -160px;
+  top: 71%;
+  left: -18.2%;
   z-index: 2;
 
   width: 192px;
@@ -48,7 +49,6 @@
   @include list-reset;
 
   display: flex;
-  width: 577px;
 
   overflow: hidden;
 }

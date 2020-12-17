@@ -26,4 +26,8 @@
   outline-color: $brighter;
 }
 
+@media (max-width: $notebook-max-width) {
+  .main-nav__phone-link {
+    font-weight: 500;
+  }
 }

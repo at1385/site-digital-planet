@@ -147,3 +147,17 @@
     display: none;
   }
 }
+
+@media (max-width: $notebook-max-width) {
+  .questions {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .questions__list {
+    width: 100%;
+  }
+}

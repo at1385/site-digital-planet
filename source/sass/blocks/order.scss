@@ -47,3 +47,15 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: $notebook-max-width) {
+  .order {
+    padding-left: 0;
+  }
+
+  .order__form {
+    &--page {
+      width: 67.7%;
+    }
+  }
+}

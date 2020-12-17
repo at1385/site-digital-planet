@@ -12,3 +12,9 @@
 .page-main__questions {
   padding-bottom: 42px;
 }
+
+@media (max-width: $notebook-max-width) {
+  .page-main {
+    width: 896px;
+  }
+}

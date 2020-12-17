@@ -34,29 +34,11 @@
 
   display: flex;
   width: 535px;
-  margin-bottom: 61px;
+  margin-bottom: 5.1%;
   padding-left: 8px;
 
   &::after {
-    counter-increment: number;
-    content: counter(number);
-    position: absolute;
-    top: 110px;
-    left: 0;
-    z-index: 1;
-
-    width: 40px;
-    height: 40px;
-
-    font-size: 28px;
-    font-weight: 700;
-    color: $brighter;
-    text-align: center;
-
-    background-color: $lightest;
-
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(6, 58, 46, 0.2);
+    @include item-number;
   }
 
   &:nth-child(odd) {

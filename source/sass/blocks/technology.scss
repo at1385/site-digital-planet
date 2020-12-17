@@ -61,3 +61,65 @@
 .technology__paragraph {
   width: 99%;
 }
+
+@media (max-width: $notebook-max-width) {
+  .technology {
+    padding-left: 0;
+  }
+
+  .technology__vr-glasses {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .technology__list-wrapper {
+    margin-top: -480px;
+    padding-left: 0;
+  }
+
+  .technology__list {
+    padding-top: 480px;
+    background-position:
+      130px 55px,
+      500px 58px,
+      85px 230px,
+      618px 220px;
+
+    counter-reset: number;
+  }
+
+  .technology__item {
+    position: relative;
+
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 50px;
+
+    &::before {
+      @include item-number;
+      top: 0;
+
+      width: 30px;
+      height: 30px;
+
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:nth-child(4) {
+      padding-top: 2px;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 3.6%;
+    }
+  }
+
+  .technology__linebreak {
+    display: none;
+  }
+}

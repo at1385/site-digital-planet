@@ -38,3 +38,22 @@
   display: none;
 }
 
+@media (max-width: $notebook-max-width) {
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo__image {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo__desktop {
+    display: none;
+  }
+
+  .logo__mobile {
+    display: block;
+  }
+}

@@ -32,8 +32,6 @@
 }
 
 .page-footer__next-page-link {
-  @include focus;
-
   position: absolute;
   top: 42px;
   left: calc(50% - 10px);
@@ -51,6 +49,8 @@
   background-image: url("../img/icon-arrow-pointer.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+
+  outline-color: $brighter;
 
   opacity: 0.5;
 
@@ -72,6 +72,10 @@
   &:focus {
     opacity: 1;
     transition: 0.4s;
+  }
+
+  &:focus {
+    outline-offset: 5px;
   }
 
   &:active {

@@ -82,3 +82,38 @@
 .howitworks__slider-controls {
   display: none;
 }
+
+@media (max-width: $notebook-max-width) {
+  .howitworks {
+    padding-left: 0;
+  }
+
+  .howitworks__list {
+    background-image: none;
+  }
+
+  .howitworks__item {
+    width: 100%;
+
+    &:nth-child(4n-1) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) {
+      padding-top: 0;
+
+      &::after {
+        top: 110px;
+      }
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 5.1%;
+    }
+  }
+
+  .howitworks__item-wrapper {
+    width: 68%;
+  }
+}

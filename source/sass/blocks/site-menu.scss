@@ -59,3 +59,12 @@
     color: $brighter;
   }
 }
+
+@media (max-width: $notebook-max-width) {
+  .site-menu {
+    width: 580px;
+
+    font-size: 14px;
+  }
+}
+

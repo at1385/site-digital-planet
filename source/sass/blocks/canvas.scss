@@ -1,10 +1,11 @@
 .canvas {
   position: relative;
 
-  width: 577px;
-  height: 315px;
+  width: 100%;
   padding-top: 15px;
   padding-right: 15px;
+
+  line-height: 0;
 
   &::before {
     content: "";
@@ -12,8 +13,8 @@
     top: 0;
     right: 0;
 
-    width: 564px;
-    height: 280px;
+    width: 97.5%;
+    height: 89%;
 
     border: 4px solid $brighter;
   }
@@ -36,12 +37,7 @@
 .canvas__image {
   position: relative;
   z-index: 1;
+}
 
-  width: 562px;
-  height: 300px;
-
-  &--small {
-    width: 195px;
-    height: 130px;
   }
 }

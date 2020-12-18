@@ -3,11 +3,13 @@
 
   display: flex;
   margin-bottom: 0;
+  padding: 0 4.7%;
   padding-top: 55px;
   padding-bottom: 30px;
 
   &--index {
-    padding: 31px 0;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 
   &--about {
@@ -16,7 +18,7 @@
 
   &--full-info {
     justify-content: space-between;
-    padding: 31px 13px;
+    padding: 31px 5.7%;
   }
 }
 

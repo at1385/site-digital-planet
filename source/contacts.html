@@ -57,61 +57,63 @@
       </header>
 
       <main class="page-main">
-        <section class="contacts">
-          <h1 class="contacts__title title">Контакты</h1>
+        <div class="page-main__container">
+          <section class="contacts">
+            <h1 class="contacts__title title">Контакты</h1>
 
-          <div class="contacts__columns">
-            <div class="contacts__column contacts__column--first">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h2 class="contacts__subtitle subtitle">Новороссийск</h2>
-                  <p class="contacts__paragraph paragraph">
-                    <a class="contacts__link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a>
-                    <a class="contacts__link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a>
-                  </p>
-                </li>
+            <div class="contacts__columns">
+              <div class="contacts__column contacts__column--first">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h2 class="contacts__subtitle subtitle">Новороссийск</h2>
+                    <p class="contacts__paragraph paragraph">
+                      <a class="contacts__link" href="tel:+79234650141">+7 (923) 465 – 01 – 41</a>
+                      <a class="contacts__link" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a>
+                    </p>
+                  </li>
 
-                <li class="contacts__item">
-                  <h2 class="contacts__subtitle subtitle">Москва</h2>
-                  <p class="contacts__paragraph paragraph">
-                    <a class="contacts__link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a>
-                    <a class="contacts__link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a>
-                  </p>
-                </li>
+                  <li class="contacts__item">
+                    <h2 class="contacts__subtitle subtitle">Москва</h2>
+                    <p class="contacts__paragraph paragraph">
+                      <a class="contacts__link" href="tel:+74958552419">+7 (495) 855 – 24 – 19</a>
+                      <a class="contacts__link" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a>
+                    </p>
+                  </li>
 
-                <li class="contacts__item">
-                  <h2 class="contacts__subtitle subtitle">Саратов</h2>
-                  <p class="contacts__paragraph paragraph">
-                    <a class="contacts__link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a>
-                    <a class="contacts__link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a>
-                  </p>
-                </li>
-              </ul>
+                  <li class="contacts__item">
+                    <h2 class="contacts__subtitle subtitle">Саратов</h2>
+                    <p class="contacts__paragraph paragraph">
+                      <a class="contacts__link" href="tel:+79422212178">+7 (942) 221 – 21 – 78</a>
+                      <a class="contacts__link" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contacts__column">
+                <h2 class="contacts__subtitle subtitle">Остались вопросы? Задайте их нам!</h2>
+
+                <p class="contacts__paragraph paragraph">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
+
+                <form id="contacts-form" class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="contacts__input-wrapper">
+                    <label class="visually-hidden" for="contacts-form-name">Ваше имя</label>
+                    <input id="contacts-form-name" class="form-field" type="text" name="contacts-form-name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="contacts__input-wrapper">
+                    <label class="visually-hidden" for="contacts-form-email">Ваш e-mail</label>
+                    <input id="contacts-form-email" class="form-field" type="email" name="contacts-form-email" placeholder="Ваш e-mail" required>
+                  </div>
+                  <div class="contacts__textarea-wrapper">
+                    <label class="visually-hidden" for="contacts-form-question">Ваш вопрос</label>
+                    <textarea id="contacts-form-question" class="form-field form-field--textarea" name="contacts-form-question" rows="8" cols="80" placeholder="Что вас интересует?" required></textarea>
+                  </div>
+                  <button class="button" type="submit" name="contacts-form-submit">Отправить</button>
+                </form>
+              </div>
             </div>
-
-            <div class="contacts__column">
-              <h2 class="contacts__subtitle subtitle">Остались вопросы? Задайте их нам!</h2>
-
-              <p class="contacts__paragraph paragraph">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
-
-              <form id="contacts-form" class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="contacts__input-wrapper">
-                  <label class="visually-hidden" for="contacts-form-name">Ваше имя</label>
-                  <input id="contacts-form-name" class="form-field" type="text" name="contacts-form-name" placeholder="Ваше имя" required>
-                </div>
-                <div class="contacts__input-wrapper">
-                  <label class="visually-hidden" for="contacts-form-email">Ваш e-mail</label>
-                  <input id="contacts-form-email" class="form-field" type="email" name="contacts-form-email" placeholder="Ваш e-mail" required>
-                </div>
-                <div class="contacts__textarea-wrapper">
-                  <label class="visually-hidden" for="contacts-form-question">Ваш вопрос</label>
-                  <textarea id="contacts-form-question" class="form-field form-field--textarea" name="contacts-form-question" rows="8" cols="80" placeholder="Что вас интересует?" required></textarea>
-                </div>
-                <button class="button" type="submit" name="contacts-form-submit">Отправить</button>
-              </form>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
       <footer class="page-footer page-footer--full-info">

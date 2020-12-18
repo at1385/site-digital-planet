@@ -55,23 +55,25 @@
       </header>
 
       <main class="page-main">
-        <section class="order">
-          <h1 class="order__title title">Закажите VR&nbsp;планетарий</h1>
+        <div class="page-main__container">
+          <section class="order">
+            <h1 class="order__title title">Закажите VR&nbsp;планетарий</h1>
 
-          <form id="order-form" class="order__form order__form--page" action="https://echo.htmlacademy.ru" method="post">
-            <p class="order__paragraph paragraph paragraph--large">Оставьте Ваши контактные данные,<br> мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним Вам.</p>
+            <form id="order-form" class="order__form order__form--page" action="https://echo.htmlacademy.ru" method="post">
+              <p class="order__paragraph paragraph paragraph--large">Оставьте Ваши контактные данные,<br> мы&nbsp;обработаем заявку в&nbsp;течении двух рабочих дней и&nbsp;перезвоним Вам.</p>
 
-            <div class="order__input-wrapper">
-              <label class="visually-hidden" for="order-form-name">Ваше имя</label>
-              <input id="order-form-name" class="form-field form-field--shadow" type="text" name="order-form-name" placeholder="Ваше имя" required>
-            </div>
-            <div class="order__input-wrapper">
-              <label class="visually-hidden" for="order-form-phone">Ваш телефон</label>
-              <input id="order-form-phone" class="form-field form-field--shadow" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
-            </div>
-            <button class="button" type="submit" name="order-form-submit">Отправить</button>
-          </form>
-        </section>
+              <div class="order__input-wrapper">
+                <label class="visually-hidden" for="order-form-name">Ваше имя</label>
+                <input id="order-form-name" class="form-field form-field--shadow" type="text" name="order-form-name" placeholder="Ваше имя" required>
+              </div>
+              <div class="order__input-wrapper">
+                <label class="visually-hidden" for="order-form-phone">Ваш телефон</label>
+                <input id="order-form-phone" class="form-field form-field--shadow" type="tel" name="order-form-phone" placeholder="Ваш телефон" required>
+              </div>
+              <button class="button" type="submit" name="order-form-submit">Отправить</button>
+            </form>
+          </section>
+        </div>
       </main>
 
       <footer class="page-footer page-footer--full-info">

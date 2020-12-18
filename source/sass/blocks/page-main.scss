@@ -1,11 +1,19 @@
 .page-main {
-  width: 1238px;
   margin: auto;
-  margin-top: 4.5%;
+  margin-top: 4%;
+  padding: 0 4.7%;
+
+  &--index {
+    margin: auto 0;
+  }
+}
+
+.page-main__container {
+  width: 1238px;
 
   &--index {
     width: 100%;
-    margin: auto 0;
+    margin-top: 0;
   }
 }
 

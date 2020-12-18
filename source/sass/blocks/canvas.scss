@@ -42,9 +42,3 @@
   position: relative;
   z-index: 1;
 }
-
-@media (max-width: $notebook-max-width) {
-  .canvas {
-    width: auto;
-  }
-}

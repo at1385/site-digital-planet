@@ -3,3 +3,12 @@
   padding-top: 39px;
   padding-bottom: 14px;
 }
+
+@media (max-width: $tablet-max-width) {
+  .page-header {
+    padding: 0 6%;
+    padding-top: 18px;
+
+    background-color: rgba($darker, 0.9);
+  }
+}

@@ -72,3 +72,33 @@
   }
 }
 
+@media (max-width: $tablet-max-width) {
+  .site-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    order: 1;
+    width: auto;
+
+    font-size: 15px;
+  }
+
+  .site-menu__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-left: 0;
+
+    &--index {
+      display: inline-block;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:not(:nth-child(2)):not(:nth-child(5n+2)) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -16,17 +16,21 @@
   margin-right: 2.8%;
   padding-left: 3.5%;
 
-  &:nth-child(5n),
+  &--index {
+    display: none;
+  }
+
+  &:nth-child(5n+1),
   &:last-child {
     margin-right: 0;
   }
 
-  &:first-child,
-  &:nth-child(6n) {
+  &:nth-child(2),
+  &:nth-child(5n+2) {
     padding-left: 0;
   }
 
-  &:not(:first-child):not(:nth-child(6n)) {
+  &:not(:nth-child(2)):not(:nth-child(5n+2)) {
     &::before {
       content: "";
       position: absolute;

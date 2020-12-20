@@ -31,3 +31,35 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .main-nav {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main-nav__site-menu {
+    margin: 49px 0;
+    margin-right: 85%;
+    padding-left: 5px;
+  }
+
+  .main-nav__order-button {
+    margin: 0 auto;
+  }
+
+  .main-nav__contacts {
+    order: 2;
+    width: 100%;
+    padding: 29px 5px;
+
+    border-top: 1px solid rgba($lightest, 0.24);
+  }
+
+  .main-nav__phone-link {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    vertical-align: middle;
+  }
+}

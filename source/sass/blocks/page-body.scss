@@ -47,3 +47,9 @@
     background-size: 430px 350px;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .page-body__wrapper {
+    height: 100%;
+  }
+}

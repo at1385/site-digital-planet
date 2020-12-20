@@ -23,6 +23,8 @@
 
 @media (max-width: $notebook-max-width) {
   .page-main__container {
-    width: 896px;
+    &:not(.page-main__container--index) {
+      width: 896px;
+    }
   }
 }

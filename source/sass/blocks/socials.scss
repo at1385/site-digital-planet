@@ -81,6 +81,16 @@
   }
 }
 
+@media (max-width: $notebook-max-width) {
+  .socials {
+    max-width: 19%;
+
+    &--small {
+      max-width: 15%;
+    }
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .socials {
     display: flex;

@@ -10,5 +10,18 @@
     padding-top: 18px;
 
     background-color: rgba($darker, 0.9);
+
+    &--js {
+      position: absolute;
+      z-index: 99;
+
+      width: 100%;
+
+      background-color: transparent;
+    }
+
+    &--opened {
+      background-color: rgba($darker, 0.9);
+    }
   }
 }

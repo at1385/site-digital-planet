@@ -2,18 +2,29 @@
   @include list-reset;
 
   display: none;
+  max-width: 14%;
 
   &--show {
     display: flex;
     flex-wrap: wrap;
   }
+
+  &--small {
+    max-width: 11%;
+  }
 }
 
 .socials__item {
   margin-right: 14px;
+  margin-bottom: 5px;
 
+  &:nth-child(4n),
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-last-child(-n+4) {
+    margin-bottom: 0;
   }
 }
 

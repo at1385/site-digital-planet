@@ -23,3 +23,11 @@
     border-bottom: none;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .title {
+    &--index {
+      font-size: 76px;
+    }
+  }
+}

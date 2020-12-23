@@ -28,3 +28,15 @@
     }
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .page-main__container {
+    &:not(.page-main__container--index) {
+      width: 696px;
+    }
+  }
+
+  .page-main__order {
+    margin-bottom: 35px;
+  }
+}

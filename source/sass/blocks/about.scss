@@ -81,3 +81,23 @@
     }
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .about {
+    padding: 0 25px;
+  }
+
+  .about__columns {
+    flex-wrap: wrap;
+  }
+
+  .about__column {
+    width: 91%;
+    margin: 0 auto;
+
+    &--right {
+      width: 89%;
+      padding-top: 36px;
+    }
+  }
+}

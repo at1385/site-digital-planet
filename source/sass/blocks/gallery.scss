@@ -30,6 +30,11 @@
     margin-left: auto;
   }
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .gallery {
     &::before {

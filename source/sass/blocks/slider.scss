@@ -1,19 +1,27 @@
-.slider {
-  &--js {
-    .slider__pagination {
-      display: block;
+.slider--js {
+  .slider__list {
+    flex-wrap: nowrap;
 
-      &--current {
-        display: inline;
-      }
+    overflow: hidden;
+  }
+
+  .slider__item {
+    flex-shrink: 0;
+  }
+
+  .slider__pagination {
+    display: block;
+
+    &--current {
+      display: inline;
     }
+  }
 
-    .slider__toggle {
-      display: block;
+  .slider__toggle {
+    display: block;
 
-      &--gallery-link {
-        display: none;
-      }
+    &--gallery-link {
+      display: none;
     }
   }
 }

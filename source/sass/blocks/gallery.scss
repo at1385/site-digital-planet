@@ -29,4 +29,13 @@
   &:nth-child(2n) {
     margin-left: auto;
   }
+
+@media (max-width: $tablet-max-width) {
+  .gallery {
+    &::before {
+      top: 66px;
+
+      font-size: 17px;
+    }
+  }
 }

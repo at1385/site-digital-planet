@@ -214,3 +214,108 @@
     }
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .vr-glasses {
+    width: 100%;
+  }
+
+  .vr-glasses__wrapper {
+    &--page {
+      width: 596px;
+      height: 596px;
+      margin-bottom: 25px;
+
+      &::before {
+        width: 670px;
+        height: 670px;
+
+        background-size: 670px;
+      }
+    }
+  }
+
+  .vr-glasses__list {
+    top: 0;
+
+    width: 100%;
+
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .vr-glasses__item {
+    position: absolute;
+
+    margin-bottom: 0;
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      top: 135px;
+      left: 190px;
+    }
+
+    &:nth-child(2) {
+      top: 95px;
+      left: 390px;
+    }
+
+    &:nth-child(3) {
+      top: 185px;
+      left: 368px;
+    }
+
+    &:nth-child(4) {
+      top: 176px;
+      left: 505px;
+    }
+  }
+
+  .vr-glasses__link {
+    width: 40px;
+    height: 40px;
+
+    color: $lightest;
+
+    background-color: rgba($bright, 0.7);
+
+    &::before {
+      top: -5px;
+      left: -5px;
+
+      width: 50px;
+      height: 50px;
+
+      border-width: 2px;
+      border-color: rgba($bright, 0.7);
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $bright;
+
+        transition: 0.4s;
+      }
+    }
+
+    &:active {
+      background-color: rgba($bright, 0.5);
+
+      &::before {
+        border-color: rgba($bright, 0.5);
+
+        transition: none;
+      }
+    }
+  }
+
+  .technology--js {
+    .vr-glasses__link {
+      display: none;
+    }
+  }
+}

@@ -89,3 +89,21 @@
     }
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .contacts__column {
+    width: 64%;
+
+    &--first {
+      width: 28%;
+    }
+  }
+
+  .contacts__list {
+    padding-left: 0;
+  }
+
+  .contacts__item {
+    margin-bottom: 26px;
+  }
+}

@@ -17,6 +17,11 @@
   }
 }
 
+.page-main__intro {
+  position: relative;
+  z-index: 1;
+}
+
 .page-main__questions {
   padding-bottom: 42px;
 }

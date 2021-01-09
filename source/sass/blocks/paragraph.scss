@@ -13,3 +13,12 @@
     line-height: 1.5;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .paragraph {
+    &--large {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+}

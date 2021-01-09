@@ -1,45 +1,28 @@
+.page-body--js {
+  .questions__question-wrapper {
+    min-height: 72px;
+    margin-bottom: 0;
+
+    background-color: transparent;
+  }
+
+  .questions__subtitle {
+    margin-top: -8px;
+
+    color: rgba($darker, 0.8);
+
+    &::before {
+      background-color: $brighter;
+    }
+  }
+
+  .questions__toggle {
+    display: block;
+  }
+}
+
 .questions {
-  position: relative;
-
-  height: 100%;
   padding-left: 25px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -70px;
-    right: -34px;
-
-    width: 235px;
-    height: 264px;
-
-    background-image: url("../img/bg-kid-vr-02.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
-  &--js {
-    .questions__question-wrapper {
-      min-height: 72px;
-      margin-bottom: 0;
-
-      background-color: transparent;
-    }
-
-    .questions__subtitle {
-      margin-top: -8px;
-
-      color: rgba($darker, 0.8);
-
-      &::before {
-        background-color: $brighter;
-      }
-    }
-
-    .questions__toggle {
-      display: block;
-    }
-  }
 }
 
 .questions__title {

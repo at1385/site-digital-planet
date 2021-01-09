@@ -30,6 +30,13 @@
 }
 
 @media (max-width: $tablet-max-width) {
+  .page-body--js {
+    .page-main__intro {
+      margin-top: 0;
+      margin-bottom: 260px;
+    }
+  }
+
   .page-main__container {
     &:not(.page-main__container--index) {
       width: 696px;

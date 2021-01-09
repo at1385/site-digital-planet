@@ -96,7 +96,7 @@
     vertical-align: middle;
   }
 
-  .page-header {
+  .page-body {
     &--js {
       .main-nav__menu-toggle {
         display: block;
@@ -108,7 +108,7 @@
       }
     }
 
-    &--opened {
+    &--menu-opened {
       .main-nav__menu-toggle {
         background-image: url("../img/icon-close-menu.svg");
       }

@@ -10,10 +10,36 @@
   &--index {
     padding-top: 31px;
     padding-bottom: 31px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 430px;
+      height: 350px;
+
+      background-image: url("../img/bg-kid-vr-01.png");
+    }
   }
 
   &--about {
     padding-top: 0;
+  }
+
+  &--questions {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 235px;
+      height: 264px;
+
+      background-image: url("../img/bg-kid-vr-02.png");
+    }
   }
 
   &--full-info {

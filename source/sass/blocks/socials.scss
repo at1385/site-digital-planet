@@ -96,3 +96,11 @@
     display: flex;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .socials {
+    &--footer {
+      display: none;
+    }
+  }
+}

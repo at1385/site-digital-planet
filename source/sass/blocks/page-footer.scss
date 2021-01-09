@@ -134,3 +134,16 @@
   }
 }
 
+@media (max-width: $mobile-max-width) {
+  .page-footer--index {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .page-footer {
+    padding-top: 45px;
+  }
+}

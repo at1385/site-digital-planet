@@ -5,23 +5,31 @@
 }
 
 @media (max-width: $tablet-max-width) {
+  .page-body {
+    &--js {
+      .page-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+
+        width: 100%;
+
+        background-color: transparent;
+      }
+    }
+
+    &--menu-opened {
+      .page-header {
+        background-color: rgba($darker, 0.9);
+      }
+    }
+  }
+
   .page-header {
     padding: 0 6%;
     padding-top: 18px;
 
     background-color: rgba($darker, 0.9);
-
-    &--js {
-      position: absolute;
-      z-index: 99;
-
-      width: 100%;
-
-      background-color: transparent;
-    }
-
-    &--opened {
-      background-color: rgba($darker, 0.9);
-    }
   }
 }

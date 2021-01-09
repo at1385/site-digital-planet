@@ -35,6 +35,13 @@
   height: 100vh;
 }
 
+@media (max-width: $tablet-max-width) {
+  .page-body {
+    &--js {
+      .page-body__wrapper--index {
+        padding-top: 141px;
+      }
+    }
   }
 }
 

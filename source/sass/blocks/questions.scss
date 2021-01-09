@@ -158,6 +158,12 @@
   }
 
   .questions__list {
+    width: 78%;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .questions__list {
     width: 100%;
   }
 }

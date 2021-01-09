@@ -72,3 +72,23 @@
     transition: none;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .button {
+    &--large {
+      padding: 15px 35px;
+      padding-left: 70px;
+
+      font-size: 18px;
+    }
+
+    &--order,
+    &--video {
+      background-size: 25px;
+    }
+
+    &--video {
+      background-position: 25% 50%;
+    }
+  }
+}

@@ -58,4 +58,15 @@
   }
 }
 
+@media (max-width: $mobile-max-width) {
+  .page-main__container {
+    &:not(.page-main__container--index) {
+      width: 100%;
+    }
+  }
+
+  .page-main__intro {
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
 }

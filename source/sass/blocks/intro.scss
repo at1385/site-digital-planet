@@ -14,9 +14,47 @@
   margin-right: 21px;
 }
 
-@media (max-width: $tablet-max-width) {
+@media (max-width: $mobile-max-width) {
   .intro {
-    margin-top: 130px;
-    margin-bottom: 260px;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .intro__title {
+    margin-bottom: 14px;
+  }
+
+  .intro__paragraph {
+    margin: 0 auto;
+  }
+
+  .intro__buttons-wrapper {
+    margin-top: 52px;
+    margin-bottom: 110px;
+  }
+
+  .intro__button {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .intro__paragraph {
+    width: 258px;
+  }
+
+  .intro__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-bottom: 30px;
+  }
+
+  .intro__button {
+    margin-right: 0;
+    margin-bottom: 13px;
   }
 }

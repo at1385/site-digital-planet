@@ -31,3 +31,11 @@
     }
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .title {
+    &--index {
+      font-size: 36px;
+    }
+  }
+}

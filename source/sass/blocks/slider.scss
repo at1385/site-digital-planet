@@ -26,6 +26,10 @@
   }
 }
 
+.slider {
+  overflow: hidden;
+}
+
 .slider__controls {
   display: flex;
   justify-content: flex-end;

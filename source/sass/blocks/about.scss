@@ -95,3 +95,38 @@
     }
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .about {
+    padding: 0;
+  }
+
+  .about__column {
+    width: 100%;
+
+    &--right {
+      padding-top: 52px;
+    }
+  }
+
+  .about__paragraph {
+    width: 100%;
+  }
+
+  .about__subtitle {
+    margin-bottom: 11px;
+
+    text-align: left;
+  }
+
+  .about__slider {
+    width: 83%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .about__slider {
+    width: 100%;
+  }
+}

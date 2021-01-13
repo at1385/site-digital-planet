@@ -36,10 +36,12 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .page-body {
-    &--js {
-      .page-body__wrapper--index {
-        padding-top: 141px;
+  .page-body--js {
+    .page-body__wrapper {
+      padding-top: 111px;
+
+      &--index {
+        padding-top: 148px;
       }
     }
   }

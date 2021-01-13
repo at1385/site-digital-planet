@@ -49,16 +49,10 @@
   @include list-reset;
 
   display: flex;
-
-  overflow: hidden;
 }
 
 .about__item {
   flex-shrink: 0;
-}
-
-.about__slider-controls {
-  margin-right: 15px;
 }
 
 @media (max-width: $notebook-max-width) {

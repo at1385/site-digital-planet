@@ -49,10 +49,14 @@
 
 @media (max-width: $mobile-max-width) {
   .page-body {
+    background-image:
+      linear-gradient(rgba($translucency-inner, 0.5)),
+      url("../img/bg-inner.jpg");
+
     &--index {
       background-image:
         radial-gradient(45.97% 54.43% at 50% 45.57%, transparent 50.28%, rgba($darkest, 0.3) 100%),
-        linear-gradient(rgba($translucency, 0.2)),
+        linear-gradient(rgba($translucency-index, 0.2)),
         url("../img/bg-index.jpg");
     }
   }
@@ -66,10 +70,14 @@
 
 @media (max-width: $mobile-middle-width) {
   .page-body {
+    background-image:
+      linear-gradient(rgba($translucency-inner, 0.5)),
+      url("../img/bg-inner-m.jpg");
+
     &--index {
       background-image:
         radial-gradient(45.97% 54.43% at 50% 45.57%, transparent 50.28%, rgba($darkest, 0.3) 100%),
-        linear-gradient(rgba($translucency, 0.2)),
+        linear-gradient(rgba($translucency-index, 0.2)),
         url("../img/bg-index-m.jpg");
     }
   }

@@ -36,6 +36,10 @@
   .main-nav {
     flex-wrap: wrap;
     width: 100%;
+
+    &--order {
+      justify-content: space-between;
+    }
   }
 
   .main-nav__site-menu {

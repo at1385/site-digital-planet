@@ -133,3 +133,17 @@
     transform: rotate(-90deg);
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .page-body--js {
+    .slider__list {
+      flex-wrap: nowrap;
+    }
+
+    .slider__item {
+      &--hidden {
+        @include visually-hidden;
+      }
+    }
+  }
+}

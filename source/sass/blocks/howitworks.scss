@@ -117,6 +117,15 @@
     width: 68%;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .page-body--js {
+    .howitworks__slider-controls {
+      display: flex;
+    }
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .page-body--js {
     .howitworks__item {

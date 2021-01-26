@@ -102,5 +102,10 @@
     &--footer {
       display: none;
     }
+
+    &--shown {
+      display: flex;
+      max-width: 100%;
+    }
   }
 }

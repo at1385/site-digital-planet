@@ -183,4 +183,48 @@
   .technology__list {
     background-image: none;
   }
+
+@media (max-width: $mobile-middle-width) {
+  .page-body--js {
+    .technology__list {
+      width: 97%;
+    }
+
+    .technology__item {
+      &:nth-last-child(-n+2) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .technology__linebreak {
+      display: block;
+    }
+  }
+
+  .technology__title {
+    margin-bottom: 50px;
+  }
+
+  .technology__vr-glasses {
+    margin-bottom: 29px;
+  }
+
+  .technology__item {
+    margin-bottom: 20px;
+    padding-left: 35px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      top: 3px;
+
+      width: 23px;
+      height: 23px;
+
+      line-height: 0.95;
+      color: $bright;
+    }
+  }
 }

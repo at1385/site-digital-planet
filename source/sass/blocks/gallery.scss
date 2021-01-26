@@ -44,3 +44,22 @@
     }
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .gallery {
+    &::before {
+      top: 5px;
+      padding-left: 34px;
+
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .gallery {
+    &::before {
+      top: 36px;
+    }
+  }
+}

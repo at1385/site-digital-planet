@@ -130,10 +130,16 @@
               <div class="howitworks__slider-controls slider__controls">
                 <p class="slider__pagination"><b class="slider__pagination slider__pagination--current">01</b>&nbsp;/&nbsp;04</p>
 
-                <div class="slider__toggle-wrapper">
-                  <button class="slider__toggle slider__toggle--prev" aria-label="Предыдущий слайд"></button>
-                  <button class="slider__toggle slider__toggle--next" aria-label="Следующий слайд"></button>
-                </div>
+                <button class="slider__toggle slider__toggle--prev" aria-label="Предыдущий слайд" disabled>
+                  <svg class="slider__pointer" width="17" height="9">
+                    <use xlink:href="img/sprite.svg#icon-arrow-pointer"></use>
+                  </svg>
+                </button>
+                <button class="slider__toggle slider__toggle--next" aria-label="Следующий слайд">
+                  <svg class="slider__pointer slider__pointer--next" width="17" height="9">
+                    <use xlink:href="img/sprite.svg#icon-arrow-pointer"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </section>

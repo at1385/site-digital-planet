@@ -69,5 +69,18 @@
     &--page {
       width: 89%;
     }
+@media (max-width: $mobile-max-width) {
+  .order__form--page {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .order {
+    padding: 0;
+  }
+
+  .order__paragraph {
+    font-size: 15px;
   }
 }

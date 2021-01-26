@@ -62,6 +62,10 @@
   width: 99%;
 }
 
+.technology__slider-controls {
+  display: none;
+}
+
 @media (max-width: $notebook-max-width) {
   .technology {
     padding-left: 0;

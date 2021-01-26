@@ -58,3 +58,13 @@
     box-shadow: 0 2px 5px rgba($darkest, 0.05);
   }
 }
+
+@media (max-width: $mobile-middle-width) {
+  .form-field {
+    width: 97%;
+
+    &--textarea {
+      height: 165px;
+    }
+  }
+}

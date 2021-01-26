@@ -213,6 +213,31 @@
 }
 
 @media (max-width: $tablet-max-width) {
+  .page-body--js {
+    .vr-glasses__item {
+      &--hidden {
+        display: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 40px;
+        height: 40px;
+
+        background-image: url("../img/icon-ellipse-pointer.svg");
+        background-size: 40px;
+      }
+    }
+
+    .vr-glasses__link {
+      display: none;
+    }
+  }
+
   .vr-glasses {
     width: 100%;
   }

@@ -68,5 +68,13 @@
   .page-main__intro {
     margin-top: 140px;
     margin-bottom: 140px;
+
+@media (max-width: $mobile-middle-width) {
+  .page-main {
+    &--questions {
+      padding: 0 2.5%;
+    }
+  }
+
   }
 }

@@ -55,6 +55,10 @@
   flex-shrink: 0;
 }
 
+.about__slider-controls {
+  margin-right: 15px;
+}
+
 @media (max-width: $notebook-max-width) {
   .about,
   .about__columns {
@@ -128,5 +132,9 @@
 @media (max-width: $mobile-middle-width) {
   .about__slider {
     width: 100%;
+  }
+
+  .about__slider-controls {
+    margin-right: 0;
   }
 }

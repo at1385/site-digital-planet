@@ -42,3 +42,18 @@
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: $mobile-max-width) {
+  .canvas--page {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .canvas {
+    &--borderless {
+      padding-top: 0;
+      padding-right: 0;
+    }
+  }
+}

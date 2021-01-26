@@ -21,3 +21,25 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .zoom {
+    &::before {
+      top: 4px;
+    }
+  }
+
+  .zoom__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .zoom {
+    &::before {
+      top: 50px;
+
+      font-size: 18px;
+    }
+  }
+}

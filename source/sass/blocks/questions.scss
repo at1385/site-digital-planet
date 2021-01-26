@@ -19,6 +19,10 @@
   .questions__toggle {
     display: block;
   }
+
+  .questions__paragraph--hidden {
+    @include visually-hidden;
+  }
 }
 
 .questions {

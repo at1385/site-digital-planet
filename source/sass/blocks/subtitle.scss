@@ -24,6 +24,9 @@
 
 @media (max-width: $mobile-max-width) {
   .subtitle {
-    font-size: 18px;
+    &--small {
+      font-size: 18px;
+    }
+
   }
 }

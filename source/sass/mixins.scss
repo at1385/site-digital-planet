@@ -26,7 +26,7 @@
   content: counter(number);
   position: absolute;
   top: 110px;
-  left: 0;
+  left: -7px;
   z-index: 1;
 
   width: 40px;
@@ -34,6 +34,7 @@
 
   font-size: 28px;
   font-weight: 700;
+  line-height: 39px;
   color: $brighter;
   text-align: center;
 

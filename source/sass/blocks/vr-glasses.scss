@@ -335,9 +335,127 @@
     }
   }
 
-  .technology--js {
-    .vr-glasses__link {
+@media (max-width: $mobile-max-width) {
+  .vr-glasses__wrapper {
+    &--page {
+      max-width: 100%;
+      height: auto;
+
+      background-color: rgba($lightest, 0.1);
+
+      border-radius: 5%;
+
+      &::before {
+        display: none;
+
+        border-radius: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-middle-width) {
+  .page-body--js {
+    .vr-glasses__item {
+      &:nth-child(1) {
+        top: 85px;
+        left: 30px;
+      }
+
+      &:nth-child(2) {
+        top: 75px;
+        left: 170px;
+      }
+
+      &:nth-child(3) {
+        top: 110px;
+        left: 165px;
+      }
+
+      &:nth-child(4) {
+        top: 135px;
+        left: 257px;
+      }
+
+      &::before {
+        width: 24px;
+        height: 24px;
+
+        background-image: url("../img/icon-ellipse-pointer.svg");
+        background-size: 24px;
+      }
+    }
+  }
+
+  .vr-glasses__wrapper {
+    &:not(.vr-glasses__wrapper--page) {
+      width: 288px;
+      height: 288px;
+    }
+
+    &::before {
       display: none;
+    }
+  }
+
+  .vr-glasses__image-wrapper {
+    padding-left: 7px;
+  }
+
+  .vr-glasses__image {
+    &:not(.vr-glasses__image--page) {
+      width: 297px;
+      height: 152px;
+    }
+  }
+
+  .vr-glasses__button {
+    display: none;
+  }
+
+  .vr-glasses__list {
+    width: 288px;
+    left: calc(50% - 288px / 2);
+    line-height: 1.2;
+  }
+
+  .vr-glasses__item {
+    position: absolute;
+
+    margin-bottom: 0;
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      top: 100px;
+      left: 55px;
+    }
+
+    &:nth-child(2) {
+      top: 73px;
+      left: 182px;
+    }
+
+    &:nth-child(3) {
+      top: 135px;
+      left: 160px;
+    }
+
+    &:nth-child(4) {
+      top: 126px;
+      left: 256px;
+    }
+  }
+
+  .vr-glasses__link {
+    width: 31px;
+    height: 31px;
+
+    &::before {
+      width: 41px;
+      height: 41px;
     }
   }
 }

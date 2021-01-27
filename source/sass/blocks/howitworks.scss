@@ -30,16 +30,10 @@
 }
 
 .howitworks__item {
-  position: relative;
-
   display: flex;
   width: 535px;
   margin-bottom: 5.1%;
   padding-left: 8px;
-
-  &::after {
-    @include item-number;
-  }
 
   &:nth-child(odd) {
     margin-right: 58px;
@@ -64,9 +58,15 @@
 }
 
 .howitworks__image-wrapper {
+  position: relative;
+
   flex-shrink: 0;
   margin: 0;
   margin-right: 21px;
+
+  &::after {
+    @include item-number;
+  }
 }
 
 .howitworks__item-wrapper {

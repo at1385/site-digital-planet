@@ -259,8 +259,9 @@
 
   .vr-glasses__list {
     top: 0;
+    left: calc(50% - 408px / 2);
 
-    width: 100%;
+    width: 408px;
 
     font-size: 26px;
     line-height: 1.5;

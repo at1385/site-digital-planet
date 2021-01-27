@@ -52,6 +52,10 @@
     }
   }
 
+  .page-main {
+    margin-top: 7%;
+  }
+
   .page-main__container {
     &:not(.page-main__container--index) {
       width: 696px;

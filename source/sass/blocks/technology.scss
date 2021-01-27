@@ -172,6 +172,11 @@
     background-image: none;
   }
 
+  .technology__slider-controls {
+    display: flex;
+  }
+}
+
 @media (max-width: $mobile-middle-width) {
   .page-body--js {
     .technology__list {

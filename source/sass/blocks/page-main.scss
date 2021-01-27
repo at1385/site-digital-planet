@@ -38,6 +38,14 @@
 
 @media (max-width: $tablet-max-width) {
   .page-body--js {
+    .page-main {
+      margin-top: 0;
+
+      &--index {
+        margin-top: auto;
+      }
+    }
+
     .page-main__intro {
       margin-top: 0;
       margin-bottom: 0;

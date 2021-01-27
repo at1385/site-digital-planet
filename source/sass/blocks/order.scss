@@ -65,10 +65,11 @@
     padding: 0 25px;
   }
 
-  .order__form {
-    &--page {
-      width: 89%;
-    }
+  .order__form--page {
+    width: 89%;
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .order__form--page {
     width: 100%;

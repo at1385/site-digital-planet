@@ -120,13 +120,17 @@
 @media (max-width: $notebook-max-width) {
   .page-footer {
     padding-top: 40px;
+
+    &--index {
+      padding-top: 31px;
+    }
   }
 
   .page-footer__next-page-link {
     top: calc(50% + 2px);
 
     &--label {
-      top: calc(50% - 11px);
+      top: calc(50% - 16px);
     }
   }
 }

@@ -1,10 +1,4 @@
 .page-body--js {
-  .slider__list {
-    flex-wrap: nowrap;
-
-    overflow: hidden;
-  }
-
   .slider__item {
     flex-shrink: 0;
   }
@@ -33,7 +27,6 @@
 .slider__controls {
   display: flex;
   justify-content: flex-end;
-  margin-right: 15px;
 }
 
 .slider__gallery {

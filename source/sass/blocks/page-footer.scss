@@ -148,15 +148,33 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .page-footer--index {
-    &::before {
-      display: none;
+  .page-footer {
+    padding-top: 45px;
+
+    &--index {
+      &::before {
+        display: none;
+      }
     }
+  }
+
+  .page-footer__next-page-link--label {
+    top: calc(50% - 12px);
   }
 }
 
 @media (max-width: $mobile-middle-width) {
-  .page-footer {
-    padding-top: 45px;
+  .page-footer--full-info {
+    flex-wrap: wrap;
+  }
+
+  .page-footer__copyright {
+    align-self: flex-start;
+    margin-right: 5px;
+
+    &:last-of-type {
+      margin-right: 2px;
+      margin-bottom: 20px;
+    }
   }
 }

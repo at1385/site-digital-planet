@@ -130,25 +130,12 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .technology--js {
-    padding: 0 25px;
-
+  .page-body--js {
     .technology__item {
       padding-left: 0;
 
       &::before {
         display: none;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-
-        width: 40px;
-        height: 40px;
-
-        background-image: url("../img/icon-ellipse-pointer.svg");
-        background-size: 40px;
       }
 
       &:nth-child(1) {
